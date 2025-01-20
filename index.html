@@ -11,6 +11,7 @@
             height: 100%;
             width: 100%;
             display: flex;
+            flex-direction: column;
             justify-content: center;
             align-items: center;
             background-color: white;
@@ -38,10 +39,22 @@
             opacity: 0.6; /* Reduced opacity for the logo */
             z-index: 1;
         }
+        footer {
+            position: absolute;
+            bottom: 10px;
+            text-align: center;
+            width: 100%;
+            font-size: 14px;
+            color: #555;
+            z-index: 2;
+        }
     </style>
 </head>
 <body>
     <div class="background-overlay"></div>
     <img src="logo.jpeg" alt="Fahrenheit" class="logo">
+    <footer>
+        &copy; 2025 Fahrenheit Cricket Club. All rights reserved.
+    </footer>
 </body>
 </html>
