@@ -63,24 +63,32 @@ html, body {
     background-color: #2980B9; /* Gradient blue */
     z-index: 2;
 }
+.squad-section, .gallery-section {
+    width: 100%;
+    max-width: 100%; /* Ensures sections don't exceed the screen width */
+}
+* {
+    box-sizing: border-box;
+}
+
+body {
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+}
 /* Media Queries for Mobile Devices */
 @media (max-width: 768px) {
-    nav {
-        flex-direction: column;
-        align-items: center;
-        padding: 10px 0;
+    body {
+        padding: 10px; /* Add padding to avoid content touching screen edges */
     }
 
     nav a {
-        margin: 10px 0;
-        font-size: 16px;
-        padding: 8px 16px;
+        font-size: 16px; /* Smaller font size for mobile */
+        padding: 8px 10px;
     }
 
     .logo {
-        width: 80%;
-        height: auto;
+        width: 80%; /* Scale down the logo for smaller screens */
     }
+}
 
     footer {
         font-size: 12px;
