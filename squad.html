@@ -6,23 +6,24 @@
     <title>Squad | Fahrenheit Cricket Club</title>
     <link rel="stylesheet" href="style.css">
     <style>
-        body, html {
+        body {
             margin: 0;
             padding: 0;
-            height: 100%;
-            display: flex;
-            flex-direction: column;
-            background: linear-gradient(135deg, #2C3E50, #1E3C5F);
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #2C3E50, #2980B9);
             color: #fff;
         }
+
         nav {
             display: flex;
-            flex-wrap: wrap;
+            flex-wrap: wrap; /* Allows items to wrap to the next line if needed */
             justify-content: center;
             padding: 10px;
             background-color: #2980B9;
         }
+
         nav a {
+            flex: 1 1 auto; /* Flex items to grow and shrink as needed */
             margin: 5px;
             color: white;
             text-decoration: none;
@@ -32,24 +33,29 @@
             background-color: #2980B9;
             transition: background-color 0.3s;
         }
+
         nav a:hover {
             background-color: rgba(255, 255, 255, 0.3);
         }
+
         .content {
             padding: 20px;
             text-align: center;
-            flex-grow: 1;
+            overflow-x: scroll; /* Enables horizontal scrolling */
         }
+
         .squad-list {
-            display: grid;
-            grid-template-columns: repeat(5, 1fr); /* 5 columns */
+            display: flex;
+            flex-wrap: nowrap; /* Prevent wrapping of items */
             gap: 20px;
-            justify-items: center;
+            justify-content: center;
             margin-top: 20px;
         }
+
         .squad-member {
             text-align: center;
         }
+
         .squad-member img {
             width: 150px;
             height: 150px;
@@ -57,6 +63,7 @@
             object-fit: cover;
             border: 4px solid #fff;
         }
+
         footer {
             text-align: center;
             width: 100%;
