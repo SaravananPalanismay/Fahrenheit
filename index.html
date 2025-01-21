@@ -42,12 +42,13 @@
         }
        nav {
     display: flex;
-    justify-content: space-evenly; /* Evenly distribute the items */
+    justify-content: space-between; /* Spread the items evenly */
     padding: 10px;
     background-color: #2980B9;
-    flex-wrap: nowrap; /* Prevent items from wrapping */
+    flex-wrap: nowrap; /* Prevent wrapping */
     width: 100%;
     box-sizing: border-box;
+    overflow: hidden; /* Hide overflow if any */
 }
 
 nav a {
@@ -58,8 +59,8 @@ nav a {
     border-radius: 5px;
     background-color: #2980B9;
     transition: background-color 0.3s;
-    flex-grow: 1; /* Ensure each item takes equal space */
-    min-width: 120px; /* Set a minimum width to avoid squishing links */
+    white-space: nowrap; /* Prevent text from wrapping */
+    min-width: 100px; /* Set a minimum width for each item */
 }
 
 nav a:hover {
