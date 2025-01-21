@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fahrenheit Cricket Club</title>
+    <title>Home - Fahrenheit Cricket Club</title>
     <style>
-        html, body {
+	html, body {
             margin: 0;
             padding: 0;
             height: 100%;
@@ -18,12 +18,12 @@
             overflow: hidden;
         }
         body {
-            background-image: url('team.jpg');
-            background-size: cover;
-            background-position: center;
-            position: relative;
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
         }
-        .background-overlay {
+		.background-overlay {
             position: absolute;
             top: 0;
             left: 0;
@@ -31,7 +31,25 @@
             height: 100%;
             background-color: rgba(255, 255, 255, 0.9);
         }
-        .logo {
+        nav {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            background-color: blue; /* Blue background for navigation */
+            padding: 10px;
+        }
+        nav a {
+            margin: 0 15px;
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+            padding: 10px 20px;
+            border-radius: 5px;
+        }
+        nav a:hover {
+            background-color: rgba(255, 255, 255, 0.3);
+        }
+		.logo {
             position: relative;
             max-width: 100%;
             max-height: 100%;
@@ -39,37 +57,16 @@
             opacity: 0.6;
             z-index: 1;
         }
-        nav {
-    position: absolute;
-    top: 10px;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    z-index: 2;     
-}
-        nav a {
-            margin: 0 15px;
-            color: white;
-            text-decoration: none;
-            font-size: 18px;
-            padding: 10px 20px;            
-			background-color: #2980B9;
-            border-radius: 5px;
-            transition: background-color 0.3s;
-        }
-        nav a:hover {
-            background-color: rgba(255, 255, 255, 0.3);
-        }
         footer {
-    position: absolute;
-    bottom: 10px;
-    text-align: center;
-    width: 100%;
-    font-size: 14px;
-    color: white;  /* White text for better contrast */
-    background-color: #2980B9; /* Gradient blue */
-    z-index: 2;
-}
+            text-align: center;
+            width: 100%;
+            font-size: 14px;
+            color: white; /* Brighter text for visibility */
+            background-color: #333; /* Darker background for better contrast */
+            padding: 10px 0;
+            position: absolute;
+            bottom: 0;
+        }
     </style>
 </head>
 <body>
