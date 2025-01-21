@@ -41,13 +41,12 @@
         .content {
             padding: 20px;
             text-align: center;
-            overflow-x: scroll; /* Enables horizontal scrolling */
         }
 
         .squad-list {
-            display: flex;
-            flex-wrap: nowrap; /* Prevent wrapping of items */
-            gap: 20px;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr); /* Creates 3 columns */
+            gap: 20px; /* Adds space between items */
             justify-content: center;
             margin-top: 20px;
         }
