@@ -40,18 +40,17 @@
             opacity: 0.6;
             z-index: 1;
         }
-       nav {
+      nav {
     display: flex;
-    justify-content: space-between; /* Spread the items evenly */
+    flex-wrap: wrap; /* Allows items to wrap to the next line if needed */
+    justify-content: center;
     padding: 10px;
     background-color: #2980B9;
-    flex-wrap: nowrap; /* Prevent wrapping */
-    width: 100%;
-    box-sizing: border-box;
-    overflow: hidden; /* Hide overflow if any */
 }
 
 nav a {
+    flex: 1 1 auto; /* Flex items to grow and shrink as needed */
+    margin: 5px;
     color: white;
     text-decoration: none;
     text-align: center;
@@ -59,8 +58,6 @@ nav a {
     border-radius: 5px;
     background-color: #2980B9;
     transition: background-color 0.3s;
-    white-space: nowrap; /* Prevent text from wrapping */
-    min-width: 100px; /* Set a minimum width for each item */
 }
 
 nav a:hover {
